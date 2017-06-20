@@ -7,8 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- Fontawesome -->
-	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
 	<!-- GoogleFonts -->
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Raleway" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -30,8 +28,8 @@
 					<button id="encuentrame">Encuéntrame</button>
 					<form class="form-horizontal" role="form" id="BudgetForm">
             <div class="form-group">
-            	<label>Origen</label><input placeholder="Introduce una ubicación" class="form-control"/>
-              <label>Destino</label><input placeholder="Introduce una ubicación" class="form-control"/>
+            	<label>Origen</label><input id="origen" placeholder="Introduce una ubicación" class="form-control"/>
+              <label>Destino</label><input id="destino" placeholder="Introduce una ubicación" class="form-control"/>
             </div>
   				</form>
 					<button id="ruta">Ruta</button>
@@ -55,7 +53,8 @@
 	</footer>
 	<!-- Maps Clave : AIzaSyBvQuGpOBRU3qRNlkFtJl22MP_Lorkc608 -->
 	<!-- Autocomplete -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvQuGpOBRU3qRNlkFtJl22MP_Lorkc608&libraries=places&callback=initMap" async defer></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvQuGpOBRU3qRNlkFtJl22MP_Lorkc608&callback=initMap&libraries=places"></script>
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Bootstrap Latest compiled and minified JavaScript -->
