@@ -4,7 +4,7 @@
 */
 
   function initMap(){
-	  var map = new google.maps.Map(document.getElementById("map"),{
+	  var map = new google.maps.Map(document.getElementById('map'),{
 
     zoom: 5,
 		center: {lat: -9.1191427, lng: -77.0349046},
@@ -12,6 +12,7 @@
 		zoomControl: false,
 		streetViewControl: false
 	});
+
 
 	/*Dentro de la función initMap(), agregamos la funcion buscar()
 		*.getCurrentPosition -> permite al usuario obtener su ubicación actual, el parámetro funcionExito,
