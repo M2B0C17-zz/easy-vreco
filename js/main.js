@@ -3,26 +3,16 @@
 	*CENTER contiene la longitud y altitud en que queremos que se muestre nuestro mapa.
 */
 
-  function initMap(){
+function initMap(){
 
     /*RUTA*/
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer;
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 7,
-    center: {lat: 41.85, lng: -87.65}
+    center: {lat: -9.1191427, lng: -77.0349046},
   });
   directionsDisplay.setMap(map);
-
-
-	  var map = new google.maps.Map(document.getElementById('map'),{
-
-    zoom: 5,
-		center: {lat: -9.1191427, lng: -77.0349046},
-		mapTypeControl: false,
-		zoomControl: false,
-		streetViewControl: false
-	});
 
 
 	/*Dentro de la función initMap(), agregamos la funcion buscar()
