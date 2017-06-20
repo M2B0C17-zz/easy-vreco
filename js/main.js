@@ -37,8 +37,9 @@ function initMap(){
 
 	var miUbicacion = new google.maps.Marker({
 		position: {lat: latitud, lng:longitud},
-		animation: google.maps.Animation.DROP,
-		map: map
+		animation: google.maps.Animation.BOUNCE, // para que salte el monito
+		map: map,
+    icon: 'img/bici.png', // icnono
 	});
 
 	/*Aumentaremos la profundidad de visualización de nuestro mapa con map.setZoom y le asignaremos
